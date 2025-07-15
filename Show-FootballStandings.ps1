@@ -142,9 +142,9 @@ for ($i = 0; $i -lt $maxCount; $i++) {
 }
 
 
-$headerFormat = "| {0,-4} | {1,-20} | {2,4} | {3,4} | {4,4} | {5,4} | {6,4} | {7,4} | {8,4} |"
+$headerFormat = "| {0,-4} | {1,-25} | {2,4} | {3,4} | {4,4} | {5,4} | {6,4} | {7,4} | {8,4} |"
 $rowFormat = $headerFormat
-$border = "+------+----------------------+------+------+------+------+------+------+------+"
+$border = "+------+---------------------------+------+------+------+------+------+------+------+"
 
 for ($i = 0; $i -lt $standings.response.league.standings.Count; $i++) {
     Write-Host $standings.response.league.standings[$i].group[0]
